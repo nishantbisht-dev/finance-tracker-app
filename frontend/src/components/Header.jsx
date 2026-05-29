@@ -50,7 +50,7 @@ function Header({ onMenuClick }) {
         </div>
       </div>
 
-      <div className="flex items-center gap-3">
+      {/* <div className="flex items-center gap-3">
         <div className="hidden items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 lg:flex">
           <Search size={16} className="text-slate-400" />
           <input
@@ -58,7 +58,7 @@ function Header({ onMenuClick }) {
             placeholder="Search..."
             className="w-48 bg-transparent text-sm outline-none placeholder:text-slate-500"
           />
-        </div>
+        </div> */}
 
         <button className="rounded-xl border border-white/10 bg-white/5 p-2 hover:bg-white/10">
           <Bell size={18} />
