@@ -17,8 +17,9 @@ const app = express();
 
 // app.use(cors());
 const allowedOrigins = [
-  "http://localhost:5173",
-  process.env.FRONTEND_URL,
+  "https://finance-tracker-frontend-pied.vercel.app",
+  // "http://localhost:5173",
+  // process.env.FRONTEND_URL,
 ];
 
 app.use(
