@@ -19,3 +19,12 @@ export const getRecentTransactions = async () => {
   const res = await api.get("/transactions?page=1&limit=5");
   return res.data.transactions;
 };
+
+export const getDashboardBudgets = async () => {
+  const currentDate = new Date();
+  const month = currentDate.getMonth() + 1;
+  const year = currentDate.getFullYear();
+
+  const res = await api.get(`/budgets?month=${month}&year=${year}`);
+  return res.data.budgets;
+};
